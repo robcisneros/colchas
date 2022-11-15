@@ -48,8 +48,8 @@ const MealItem = (props) => {
           <img className="w-40 rounded-full" src={imagesArray[0]} alt={props.name}/>
         </div>
         <div>
-        <h3 className="mb-1"> {props.description} </h3>
-        <div className="mt-1 font-bold text-xl text-blue-500"> {price} </div>
+        <h3 className="mb-1 text-right"> {props.description} </h3>
+        <div className="mt-1 font-bold text-xl text-blue-500 text-right"> {price} </div>
           <MealItemForm onAddToCart={addToCartHandler} />{" "}
         </div>
       </div>
