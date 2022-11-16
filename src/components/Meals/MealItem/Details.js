@@ -9,9 +9,7 @@ const Details = (props) => {
     <Modal>
       {props.children}
 
-      <h1> {props.description} </h1>
-      
-      <div className={classes.description}> {props.description} </div>
+      <p className="font-bold"> {props.description} </p>
       <div className={classes.price}> {price} </div>
       <p><span className="font-bold">Color: </span> {props.color} </p>
       <p><span className="font-bold">Tamaño: </span> {props.size} </p>

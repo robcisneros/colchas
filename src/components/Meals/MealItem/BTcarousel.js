@@ -9,7 +9,8 @@ const BTcarosuel = (props) => {
   //console.log(images);
 
   const setCurrentPosition = (position) => {
-    setActualPosition(position);
+    // setActualPosition(position);
+    console.log(position);
   };
 
   const setNext = () => {
@@ -45,11 +46,11 @@ const BTcarosuel = (props) => {
             &#8658;
           </button>
         </div>
-        <div className="text-center w-full self-stretch flex overflow-hidden rounded-xl my-4">
-          <div className="m-0 p-0 list-none">
+        <div className="text-center w-full self-stretch flex overflow-hidden my-4">
+          <div className="m-0 p-0 w-full self-stretch flex overflow-hidden">
             <img
               key={images[`${actualPosition}`].id}
-              className="flex items-center justify-center min-w-full h-full bg-no-repeat object-cover bg-center transition-all ease-in duration-1000 "
+              className="rounded-xl flex justify-center w-full h-full object-cover object-center transition-all ease-in duration-1000 "
               src={images[`${actualPosition}`].link}
               alt={images[`${actualPosition}`].id}
             />
@@ -61,7 +62,7 @@ const BTcarosuel = (props) => {
               <button
                 key={imageObj.id}
                 className="h-5 w-5 mx-2 rounded-full bg-white border opacity-40 cursor-pointer transition-all ease-in-out hover:opacity-90 "
-                // onClick={setCurrentPosition(imageObj.id)}
+                 onClick={setCurrentPosition}
               ></button>
             );
           })}

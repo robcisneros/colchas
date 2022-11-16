@@ -6,7 +6,7 @@ import HeaderCartButton from "./HeaderCartButton";
 const Header = props => {
     return <Fragment>
         <header className={classes.header}>
-            <h1>Mary Shop</h1>
+            <h1 className="font-bold text-lg text-white">Mary Shop</h1>
             <HeaderCartButton onClick={props.onShowCart} ></HeaderCartButton>
         </header>
         <div className={classes['main-image']}>

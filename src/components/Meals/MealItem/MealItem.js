@@ -41,15 +41,18 @@ const MealItem = (props) => {
         />
       )}
       <div className="flex justify-between m-4 pb-4 border-b border-solid border-gray-400">
-        <div 
-          className="w-40 h-40"
-          onClick={showDetailsHandler}
-        >
-          <img className="w-40 rounded-full" src={imagesArray[0]} alt={props.name}/>
+        <div className="w-40 h-40" onClick={showDetailsHandler}>
+          <img
+            className="w-40 rounded-full"
+            src={imagesArray[0]}
+            alt={props.name}
+          />
         </div>
-        <div>
-        <h3 className="mb-1 text-right"> {props.description} </h3>
-        <div className="mt-1 font-bold text-xl text-blue-500 text-right"> {price} </div>
+        <div className="flex flex-col items-end justify-center">
+          <h3 className="mb-1 text-right font-bold"> {props.description} </h3>
+          <div className="mt-1 font-bold text-xl text-blue-700 text-right">
+            {price}
+          </div>
           <MealItemForm onAddToCart={addToCartHandler} />{" "}
         </div>
       </div>
