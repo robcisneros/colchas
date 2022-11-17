@@ -13,6 +13,7 @@ const Details = (props) => {
       <div className={classes.price}> {price} </div>
       <p><span className="font-bold">Color: </span> {props.color} </p>
       <p><span className="font-bold">Tamaño: </span> {props.size} </p>
+      <p><span className="font-bold">Status: </span> {props.status} </p>
       <div> <BTcarosuel items={props.photos}/> </div>
       <div className={classes.actions}>
         <button

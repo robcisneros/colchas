@@ -49,6 +49,7 @@ const MealItem = (props) => {
           size={props.size}
           color={props.color}
           photos={imagesArray}
+          status={props.status}
           onHideDetails={hiddenDetailsHandler}
         />
       )}
