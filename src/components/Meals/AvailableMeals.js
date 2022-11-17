@@ -22,6 +22,7 @@ const AvailableMeals = (props) => {
           size: data[key].size,
           price: data[key].price,
           photos: data[key].photos,
+          status: data[key].status,
         });
       }
       console.log(loadedMeals);
@@ -51,6 +52,7 @@ const AvailableMeals = (props) => {
         size={product.size}
         color={product.color}
         photos={product.photos}
+        status={product.status}
       />
     ));
   }
