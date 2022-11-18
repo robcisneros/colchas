@@ -66,9 +66,9 @@ const MealItem = (props) => {
           <div className="mt-1 font-bold text-xl text-blue-700 text-right">
             {price}
           </div>
+          <p className="mb-1 text-right"> {props.name} </p>
           <div className="flex flex-wrap flex-row">
             <button className={`h-5 w-5 mx-2 rounded-full border ${colorStatus}`}></button>
-            {/* <button className="bg-naranja h-5 w-5 mx-2 rounded-full border"></button> */}
             <p>{props.status}</p>
           </div>
           <MealItemForm onAddToCart={addToCartHandler} />{" "}

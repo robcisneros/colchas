@@ -27,12 +27,12 @@ const MealItemForm = (props) => {
     <form onSubmit={submitHandler}>
       <Input
         ref={amountInputRef}
-        label="Amount"
+        label="Cantidad"
         input={{
           id: "amount",
           type: "number",
           min: "1",
-          max: "5",
+          max: "10",
           step: "1",
           defaultValue: "1",
         }}
