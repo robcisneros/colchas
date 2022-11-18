@@ -5,7 +5,7 @@ const MealsSummary = () => {
     <section className={classes.summary}>
       <h2>Catálogo de piezas únicas.</h2>
       <p>
-        Puedes levantar pedido usando el carrito (esquina superior derecha) o por whatsApp al 833 444 2244.
+        Puedes levantar tu pedido por whatsApp al 833 218 8379.
       </p>
     </section>
   );
