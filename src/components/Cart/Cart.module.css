@@ -23,7 +23,7 @@
     font: inherit;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid #0353a4;
+    border: 1px solid black;
     padding: 0.5rem 2rem;
     border-radius: 25px;
     margin-left: 1rem;
@@ -41,6 +41,6 @@
   }
   
   .actions .button {
-    background-color: #0353a4;
+    background-color: #b5838d;
     color: white;
   }

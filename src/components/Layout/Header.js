@@ -1,17 +1,17 @@
 import { Fragment } from "react";
-import classes from "./Header.module.css";
-import frontImage from "../../assets/sheeplogo.png";
+// import classes from "./Header.module.css";
+// import frontImage from "../../assets/sheeplogo.png";
 import HeaderCartButton from "./HeaderCartButton";
 
 const Header = props => {
     return <Fragment>
-        <header className={classes.header}>
-            <h1 className="font-bold text-lg text-white">Mary Shop</h1>
+        <header className="fixed top-0 left-0 px-6 w-full h-20 bg-rosaClaro flex justify-between items-center box-border z-10">
+            <h1 className="font-bold text-lg text-black">Mary Shop</h1>
             <HeaderCartButton onClick={props.onShowCart} ></HeaderCartButton>
         </header>
-        <div className={classes['main-image']}>
+        {/* <div className={classes['main-image']}>
             <img src={frontImage} alt='Don Borregon' />
-        </div>
+        </div> */}
     </Fragment>
 };
 

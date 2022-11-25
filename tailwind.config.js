@@ -9,6 +9,8 @@ module.exports = {
         'rojo':'#c1121f',
         'naranja':'#fb8500',
         'verde':'#38b000',
+        'rosaFuerte': '#b5838d',
+        'rosaClaro': '#ffcdb2',
       },
     },
   },

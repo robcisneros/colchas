@@ -31,6 +31,7 @@
   .actions button {
     font: inherit;
     color: #0353a4;
+    border: 1px solid black;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -44,8 +45,8 @@
   }
   
   .actions .submit {
-    border: 1px solid #001845;
-    background-color: #0353a4;
+    border: 1px solid black;
+    background-color: #b5838d;
     color: white;
   }
   

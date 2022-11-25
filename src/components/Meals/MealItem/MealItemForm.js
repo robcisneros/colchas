@@ -31,12 +31,12 @@ const MealItemForm = (props) => {
           id: "amount",
           type: "number",
           min: "1",
-          max: "10",
+          max: "5",
           step: "1",
           defaultValue: "1",
         }}
       />
-      <button className="py-2 px-8 cursor-pointer bg-blue-400 border border-solid rounded-2xl font-bold"> + Agregar</button>
+      <button className="py-2 px-8 cursor-pointer bg-rosaFuerte border border-solid rounded-2xl font-bold"> + Agregar</button>
       {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
     </form>
   );
