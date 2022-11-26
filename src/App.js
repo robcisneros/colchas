@@ -4,6 +4,7 @@ import Header from "./components/Layout/Header";
 import SearchBar from "./components/Layout/SearchBar/SearchBar";
 import CartProvider from "./store/CartProvider";
 import useHttp from "./components/hooks/use-http";
+// import Dropdown from "./components/UI/Dropdown";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -36,7 +37,9 @@ function App() {
       }
       // console.log(loadedMeals);
 
-      setProductos(loadedMeals);
+      setProductos(loadedMeals.filter((product) => {
+        return product.status.toLowerCase().includes('disponible')
+      }));
     };
 
     fetchMeals(
@@ -53,6 +56,7 @@ function App() {
       <Header onShowCart={showCartHandler} />
       
       <main>
+        {/* <Dropdown /> */}
         <SearchBar products={productos} isLoading={isLoading} error={error} />
       </main>
     </CartProvider>
