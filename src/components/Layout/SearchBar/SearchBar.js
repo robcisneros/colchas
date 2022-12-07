@@ -18,12 +18,12 @@ const SearchBar = (props) => {
         );
       })
     );
-    console.log("dentro");
+    // console.log("dentro");
   }, [searchTerm, props.products]);
 
   const searchChangeHandler = (event) => {
     setSearchTerm(event.target.value);
-    console.log(event.target.value);
+    // console.log(event.target.value);
   };
 
   let content = <p>Found no products.</p>;

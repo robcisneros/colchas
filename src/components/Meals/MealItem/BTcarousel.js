@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const BTcarosuel = (props) => {
   const [actualPosition, setActualPosition] = useState(0);
   let images = [{}];
+
   images = props.items.map(
     (i, index) => (images[index] = { id: index, link: i })
   );
   //console.log(images);
 
-  const setCurrentPosition = (position) => {
-    // setActualPosition(position);
-    console.log(position);
+  const setCurrentPosition = (key) => {
+    setActualPosition(key);
   };
 
   const setNext = () => {
@@ -56,18 +56,19 @@ const BTcarosuel = (props) => {
             />
           </div>
         </div>
-        <div className="absolute bottom-10 w-full flex justify-center">
+        
+      </div>
+      <div className="absolute bottom-10 w-full flex justify-center">
           {images.map((imageObj) => {
             return (
               <button
                 key={imageObj.id}
-                className="h-5 w-5 mx-2 rounded-full bg-white border opacity-40 cursor-pointer transition-all ease-in-out hover:opacity-90 "
-                 onClick={setCurrentPosition}
+                className={`h-4 w-4 mx-2 rounded-full border ${actualPosition===imageObj.id ? 'bg-rosaFuerte': 'bg-gray-200'} cursor-pointer transition-all ease-in-out`}
+                 onClick={event => setCurrentPosition(imageObj.id)}
               ></button>
             );
           })}
         </div>
-      </div>
     </section>
   );
 };
